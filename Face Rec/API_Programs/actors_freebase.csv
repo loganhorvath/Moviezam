@@ -1,0 +1,845 @@
+Person ID,Name,Freebase ID
+1,George Lucas,/en/george_lucas
+2,Mark Hamill,/en/mark_hamill
+3,Harrison Ford,/en/harrison_ford
+4,Carrie Fisher,/en/carrie_fisher
+5,Peter Cushing,/en/peter_cushing
+6,Anthony Daniels,/en/anthony_daniels
+7,Andrew Stanton,
+8,Lee Unkrich,
+9,Graham Walters,
+10,Bob Peterson,
+11,David Reynolds,
+12,Alexander Gould,/en/alexander_gould
+13,Albert Brooks,/en/albert_brooks
+14,Ellen DeGeneres,/en/ellen_degeneres
+18,Brad Garrett,/en/brad_garrett
+19,Allison Janney,/en/allison_janney
+20,Elizabeth Perkins,/en/elizabeth_perkins
+22,Barry Humphries,/en/barry_humphries
+23,Bill Hunter,/en/bill_hunter_1940
+24,Robert Zemeckis,/en/robert_zemeckis
+26,Winston Groom,
+27,Eric Roth,/en/eric_roth
+28,Wendy Finerman,
+29,Steve Tisch,/en/steve_tisch
+30,Steve Starkey,
+31,Tom Hanks,/en/tom_hanks
+32,Robin Wright,/en/robin_wright_penn
+33,Gary Sinise,/en/gary_sinise
+34,Mykelti Williamson,/en/mykelti_williamson
+35,Sally Field,/en/sally_field
+36,Don Burgess,
+37,Alan Silvestri,
+38,Arthur Schmidt,
+39,Sam Mendes,/en/sam_mendes
+40,Orson Welles,/en/orson_welles
+42,Lars von Trier,/en/lars_von_trier
+43,John Fawcett,/en/john_fawcett_1968
+44,Simon Maginn,
+45,Stephen Massicotte,
+47,Björk,/en/bjork
+48,Sean Bean,/en/sean_bean
+49,Maria Bello,
+50,Catherine Deneuve,/en/catherine_deneuve
+51,Richard Elfyn,
+52,David Morse,/en/david_morse_1953
+53,Peter Stormare,/en/peter_stormare
+54,Maurice Roëves,/en/maurice_roeves
+55,Abigail Stone,
+56,Sophie Stuckey,
+59,Luc Besson,/en/luc_besson
+60,Patrice Ledoux,
+61,Robert Mark Kamen,
+62,Bruce Willis,/en/bruce_willis
+63,Milla Jovovich,/en/milla_jovovich
+64,Gary Oldman,/en/gary_oldman
+65,Ian Holm,/en/ian_holm
+66,Chris Tucker,/en/chris_tucker
+67,Erich Pommer,
+68,Fritz Lang,
+69,Gottfried Huppertz,
+70,Karl Freund,
+71,Günther Rittau,
+73,Alfred Abel,
+74,Gustav Fröhlich,
+75,Brigitte Helm,
+77,Rudolf Klein-Rogge,
+78,Fritz Rasp,
+79,Theodor Loos,
+80,Erwin Biswanger,
+81,Heinrich George,
+82,Olaf Storm,
+83,Hanns Leo Reich,
+85,Johnny Depp,/en/johnny_depp
+86,Bruce Brown,
+90,Isabel Coixet,
+92,Robert August,
+93,Esther García,
+95,Gaston Georis,
+96,Gordon McLennan,
+97,Nanci Kincaid,
+98,Sarah Polley,/en/sarah_polley
+99,Amanda Plummer,/en/amanda_plummer
+100,Scott Speedman,/en/scott_speedman
+101,Leonor Watling,
+102,Debbie Harry,/en/debbie_harry
+103,Mark Ruffalo,/en/mark_ruffalo
+104,Jean-Claude Larrieu,
+105,Lisa Robison,
+106,Alfonso Vilallonga,
+108,Peter Jackson,/en/peter_jackson
+109,Elijah Wood,/en/elijah_wood
+110,Viggo Mortensen,/en/viggo_mortensen
+112,Cate Blanchett,/en/cate_blanchett
+113,Christopher Lee,/en/christopher_lee
+114,Orlando Bloom,/en/orlando_bloom
+116,Keira Knightley,/en/keira_knightley
+117,Howard Shore,
+118,Geoffrey Rush,/en/geoffrey_rush
+120,Dariusz Wolski,
+122,Klaus Badelt,
+123,Barrie M. Osborne,
+126,Fran Walsh,
+128,Philippa Boyens,
+129,J. R. R. Tolkien,
+130,Kenny Baker,/en/kenny_baker
+131,Jake Gyllenhaal,/en/jake_gyllenhaal
+132,Scott MacDonald,
+133,Peter Sarsgaard,/en/peter_sarsgaard
+134,Jamie Foxx,/en/jamie_foxx
+135,Bobby Cohen,
+136,Sam Mercer,
+138,Quentin Tarantino,/en/quentin_tarantino
+139,Uma Thurman,/en/uma_thurman
+140,Lucy Liu,/en/lucy_liu
+141,David Carradine,/en/david_carradine
+142,William Broyles Jr.,/en/william_broyles_jr
+147,Michael Madsen,/en/michael_madsen
+148,Anthony Swofford,/en/anthony_swofford
+149,Robert Richardson,
+150,RZA,/en/rza
+151,Roger Deakins,
+152,Jim Morrison,
+153,Thomas Newman,
+154,Walter Murch,/en/walter_murch
+155,Lucas Black,/en/lucas_black
+156,Sally Menke,
+157,Thea von Harbou,
+159,Ivri Lider,
+160,Eytan Fox,
+161,Amir Harel,
+162,Gal Uchovsky,
+163,Yosef Grunfeld,
+164,Lior Ashkenazi,/en/lior_ashkenazi
+165,Knut Berger,
+166,Caroline Peters,/en/caroline_peters
+167,Gideon Shemer,
+168,Carola Regnier,
+169,Hanns Zischler,/en/hanns_zischler
+170,Ernest Lenart,
+171,Tobias Hochstein,
+172,Michael Winterbottom,/en/michael_winterbottom
+173,Andrew Eaton,/en/andrew_eaton
+176,Kieran O'Brien,/en/kieran_obrien
+177,Margo Stilley,/en/margo_stilley
+179,Marcel Zyskind,
+182,Mat Whitecross,
+183,Koji Morimoto,
+185,Katsuhiro Otomo,
+186,Yoko Kanno,
+187,Tensai Okamura,/en/tensai_okamura
+188,Michael Hynson,
+190,Clint Eastwood,/en/clint_eastwood
+192,Morgan Freeman,/en/morgan_freeman
+193,Gene Hackman,/en/gene_hackman
+194,Richard Harris,/en/richard_harris
+195,Lennie Niehaus,
+197,David Silverman,/en/david_silverman
+198,Dan Castellaneta,/en/dan_castellaneta
+199,Julie Kavner,/en/julie_kavner
+200,Nancy Cartwright,/en/nancy_cartwright
+201,Michel Gondry,/en/michel_gondry
+202,Charlie Kaufman,
+204,Kate Winslet,/en/kate_winslet
+205,Kirsten Dunst,/en/kirsten_dunst
+206,Jim Carrey,/en/jim_carrey
+207,Tom Wilkinson,/en/tom_wilkinson
+208,Ryan Whitney,
+209,Jane Adams,/en/jane_adams_1965
+210,Amir Ali Said,
+211,Debbon Ayer,
+212,David Cross,/en/david_cross
+213,Gerry Robert Byrne,
+214,Brian Price,
+216,Josh Flitter,/en/josh_flitter
+220,Lola Daehler,
+221,Lauren Adler,
+222,Pierre Bismuth,
+223,Alejandro González Iñárritu,/en/alejandro_gonzalez_inarritu
+224,David Cronenberg,/en/david_cronenberg
+225,Ashton Holmes,/en/ashton_holmes
+226,Heidi Hayes,
+227,William Hurt,/en/william_hurt
+228,Ed Harris,/en/ed_harris
+229,Peter MacNeill,/en/peter_macneill
+230,Stephen McHattie,/en/stephen_mchattie
+231,Greg Bryk,/en/greg_bryk
+232,Kyle Schmid,/en/kyle_schmid
+233,Sumela Kay,/en/sumela_kay
+234,Gerry Quigley,
+235,Deborah Drakeford,
+236,Bill MacDonald,
+237,Aidan Devine,
+239,Jon Vitti,/en/jon_vitti
+240,Stanley Kubrick,
+241,Arthur C. Clarke,/en/arthur_c_clarke
+243,Geoffrey Unsworth,
+244,Ray Lovejoy,
+245,Keir Dullea,/en/keir_dullea
+246,Gary Lockwood,/en/gary_lockwood
+247,William Sylvester,/en/william_sylvester
+248,Daniel Richter,
+249,Leonard Rossiter,/en/leonard_rossiter
+250,Margaret Tyzack,/en/margaret_tyzack
+251,Robert Beatty,/en/robert_beatty
+252,Sean Sullivan,
+253,Douglas Rain,
+254,H.L. Bird,
+255,Winston Ryder,
+257,Victor Lyndon,
+258,Gael García Bernal,/en/gael_garcia_bernal
+259,Vanessa Bauche,
+260,Marco Pérez,
+261,Goya Toledo,
+262,Álvaro Guerrero,
+263,Emilio Echevarría,/en/emilio_echevarria
+264,Jorge Salinas,/en/jorge_salinas
+265,Rodrigo Murray,
+266,Humberto Busto,
+267,Gerardo Campbell,
+268,Rosa María Bianchi,/en/rosa_maria_bianchi
+269,Dunia Saldívar,
+270,Adriana Barraza,/en/adriana_barraza
+271,José Sefami,
+272,Lourdes Echevarría,
+273,Guillermo Arriaga,
+275,Rodrigo Prieto,
+276,Luis Carballar,
+277,Fernando Pérez Unda,
+278,Gustavo Santaolalla,
+279,Antonio Vega,
+280,Terry Gilliam,/en/terry_gilliam
+281,Janet Peoples,
+282,Charles Roven,
+283,Robert Cavallo,
+284,Gary Levinsohn,
+285,Robert Kosberg,
+286,Lloyd Phillips,
+287,Brad Pitt,/en/brad_pitt
+288,Jon Seda,/en/jon_seda
+289,Madeleine Stowe,/en/madeleine_stowe
+290,Christopher Plummer,/en/christopher_plummer
+291,Frank Gorshin,/en/frank_gorshin
+292,Frederick Strother,
+293,Roger Pratt,
+294,Mick Audsley,
+295,Imogen Pollard,
+296,Robin Clarke,
+297,Jay Meagher,
+298,Chris Bender,
+305,Josh Olson,
+306,John Wagner,
+307,Peter Suschitzky,
+309,Pedro Almodóvar,
+310,Ronald Sanders,
+311,Michel Ruben,
+312,Jon Brion,/en/jon_brion
+313,Ellen Kuras,/en/ellen_kuras
+321,Anthony Bregman,
+322,Steve Golin,
+323,Curtis Hanson,/en/curtis_hanson
+324,Scott Silver,
+325,Eminem,/en/eminem
+326,Kim Basinger,/en/kim_basinger
+327,Mekhi Phifer,/en/mekhi_phifer
+328,Brittany Murphy,/en/brittany_murphy
+329,Carol Fenelon,/en/carol_fenelon
+330,Jay Rabinowitz,
+331,Craig Kitson,
+333,Evan Jones,/en/evan_jones
+334,Omar Benson Miller,/en/omar_benson_miller
+335,Michael Shannon,/en/michael_shannon
+336,Xzibit,/en/xzibit
+337,Proof,/en/proof_1975
+338,Obie Trice,/en/obie_trice
+339,Brian Grazer,/en/brian_grazer
+340,Jimmy Iovine,/en/jimmy_iovine
+341,De'Angelo Wilson,/en/deangelo_wilson
+342,Eugene Byrd,/en/eugene_byrd
+343,Taryn Manning,/en/taryn_manning
+344,Larry Hudson,
+345,DJ Head,
+346,Mike Bell,
+347,Tom Rooker,
+348,William Goldman,
+349,Scott Glenn,/en/scott_glenn
+350,Laura Linney,/en/laura_linney
+351,Judy Davis,/en/judy_davis
+352,Dennis Haysbert,/en/dennis_haysbert
+355,David Baldacci,
+356,Jack N. Green,
+357,Hany Abu-Assad,
+366,James Mangold,/en/james_mangold
+368,Reese Witherspoon,/en/reese_witherspoon
+369,Henry Bumstead,
+370,Jack G. Taylor Jr.,
+371,Bill Coe,
+372,Tom Stoppard,/en/tom_stoppard
+373,Doug Jackson,
+374,Charles McKeown,/en/charles_mckeown
+375,Bub Asman,
+376,Arnon Milchan,
+377,Patrick Cassavetti,/en/patrick_cassavetti
+378,Jonathan Pryce,
+379,Donald Harris,
+380,Robert De Niro,/en/robert_de_niro
+381,Katherine Helmond,/en/katherine_helmond
+382,Bob Hoskins,/en/bob_hoskins
+383,Michael Palin,/en/michael_palin
+384,Joel Cox,
+385,Ian Richardson,/en/ian_richardson
+386,Peter Vaughan,/en/peter_vaughan
+387,Kim Greist,/en/kim_greist
+388,Jim Broadbent,/en/jim_broadbent
+389,Alison Eastwood,/en/alison_eastwood
+390,Irene Lamb,
+391,Norman Garwood,
+393,Rodney Glenn,
+394,Bob Doyle,
+397,Darío Moreno,
+398,Rosario Flores,
+399,Mariola Fuentes,
+400,Geraldine Chaplin,/en/geraldine_chaplin
+402,Pina Bausch,
+403,Javier Aguirresarobe,
+404,Melora Hardin,/en/melora_hardin
+405,Alberto Iglesias,
+407,Gill Dennis,
+408,James Keach,/en/james_keach
+409,Cathy Konrad,
+410,John Carter Cash,
+413,José Salcedo,
+414,Alan C. Blomquist,
+417,Ginnifer Goodwin,/en/ginnifer_goodwin
+418,Robert Patrick,/en/robert_patrick
+419,Tyler Hilton,/en/tyler_hilton
+420,Johnathan Rice,/en/johnathan_rice
+421,Shooter Jennings,/en/shooter_jennings
+422,Waylon Payne,
+423,Phyllis Huffman,
+424,Dallas Roberts,/en/dallas_roberts
+425,Dan John Miller,
+426,Larry Bagby,/en/larry_bagby
+427,Sandra Ellis Lafferty,/en/sandra_ellis_lafferty
+428,Dan Beene,
+429,Lucas Till,/en/lucas_till
+430,Hailey Anne Nelson,
+431,Victoria Hester,
+432,Phedon Papamichael,
+433,Michael McCusker,
+434,Lisa Beach,
+435,Shirley Fulton Crumley,
+436,Sarah Katzman,
+437,David J. Bomba,
+448,Hilary Swank,/en/hilary_swank
+449,Jay Baruchel,/en/jay_baruchel
+450,Mike Colter,/en/mike_colter
+451,Lucia Rijker,/en/lucia_rijker
+452,Margo Martindale,/en/margo_martindale
+453,Riki Lindhome,/en/riki_lindhome
+454,Michael Peña,/en/michael_pena
+455,Paul Haggis,/en/paul_haggis
+457,Albert S. Ruddy,/en/albert_ruddy
+459,David Potaux-Razel,
+460,Tom Stern,
+461,Deborah Hopper,
+462,Greg Brenman,/en/greg_brenman
+463,Jonathan Finn,
+464,Charles Brand,
+465,Tessa Ross,
+466,David M. Thompson,/en/david_m_thompson
+467,Natascha Wharton,
+468,Stephen Daldry,
+469,Stephen Warbeck,
+470,Lee Hall,
+471,Maria Djurkovic,
+472,Mark Holding,
+473,Brian Tufano,
+474,Jina Jay,
+475,Tatiana Macdonald,
+476,John Wilson,
+477,Julie Walters,/en/julie_walters
+478,Jamie Bell,/en/jamie_bell
+479,Jamie Draven,/en/jamie_draven
+480,Gary Lewis,/en/gary_lewis
+481,Jean Heywood,
+482,Stuart Wells,
+483,Nicola Blackwell,
+486,Wallace Wolodarsky,/en/wallace_wolodarsky
+487,Janine Birkett,
+488,Steven Spielberg,/en/steven_spielberg
+489,Kathleen Kennedy,/en/kathleen_kennedy
+490,Colin Wilson,
+491,John Williams,/en/john_williams
+492,Janusz Kamiński,
+493,Michael Kahn,
+494,Terri Taylor,
+495,Debra Zane,
+496,Rick Carter,
+497,Doug J. Meerdink,
+498,Joanna Johnston,
+499,Cari Finken,
+500,Tom Cruise,/en/tom_cruise
+501,Dakota Fanning,/en/dakota_fanning
+502,Miranda Otto,/en/miranda_otto
+503,Justin Chatwin,/en/justin_chatwin
+504,Tim Robbins,/en/tim_robbins
+505,Camillia Monet,/en/camillia_sanes
+506,John Scurti,/en/john_scurti
+507,Josh Friedman,/en/josh_friedman
+508,David Koepp,
+510,Tim Burton,/en/tim_burton
+511,Larry Franco,
+512,Laurie Parker,
+513,Jonathan Gems,
+514,Jack Nicholson,/en/jack_nicholson
+515,Glenn Close,/en/glenn_close
+516,Annette Bening,/en/annette_bening
+517,Pierce Brosnan,/en/pierce_brosnan
+518,Danny DeVito,/en/danny_devito
+519,Martin Short,/en/martin_short
+520,Sarah Jessica Parker,/en/sarah_jessica_parker
+521,Michael J. Fox,/en/michael_j_fox
+522,Rod Steiger,/en/rod_steiger
+523,Tom Jones,/en/tom_jones_1940
+524,Natalie Portman,/en/natalie_portman
+525,Christopher Nolan,
+526,Lukas Haas,/en/lukas_haas
+527,Jonathan Nolan,/en/jonathan_nolan
+528,Sylvia Sidney,/en/sylvia_sidney
+529,Guy Pearce,/en/guy_pearce
+530,Carrie-Anne Moss,/en/carrie-anne_moss
+531,Danny Elfman,/en/danny_elfman
+532,Joe Pantoliano,/en/joe_pantoliano
+533,Victor Herbert,
+534,Mark Boone Junior,/en/mark_boone_junior
+535,Russ Fega,
+536,Jorja Fox,/en/jorja_fox
+537,Stephen Tobolowsky,/en/stephen_tobolowsky
+538,Harriet Sansom Harris,/en/harriet_sansom_harris
+539,Thomas Lennon,/en/thomas_lennon
+540,Callum Keith Rennie,/en/callum_keith_rennie
+541,Chris Lebenzon,
+542,Kimberly Campbell,
+543,Marianne Muellerleile,/en/marianne_muellerleile
+544,Larry Holden,
+545,Matthew Barry,
+546,Jeanne McCarthy,
+547,Victoria Thomas,
+548,Wynn Thomas,
+549,Buzz Visconti,
+550,Jennifer Todd,/en/jennifer_todd
+551,Suzanne Todd,/en/suzanne_todd
+552,Elaine Dysinger,
+553,John Dexter,
+554,Aaron Ryder,
+555,Nancy Haigh,
+556,Emma Thomas,
+557,Colleen Atwood,
+558,David Julyan,
+559,Wally Pfister,
+560,Patti Podesta,
+561,John Papsidera,
+562,Richard LeGrand Jr.,
+563,Dody Dorn,
+564,Richard Linklater,
+566,Anne Walker-McBay,
+568,Kim Krizan,
+569,Ethan Hawke,/en/ethan_hawke
+571,Andrea Eckert,/en/andrea_eckert
+572,Hanno Pöschl,
+573,Karl Bruckschwaiger,
+574,Tex Rubinowitz,
+576,Lee Daniel,
+577,Fred Frith,
+578,Ridley Scott,/en/ridley_scott
+580,Sandra Adair,
+581,Michael Deeley,
+582,Sheri Galloway,
+583,Hampton Fancher,/en/hampton_fancher
+584,Philip K. Dick,
+585,Rutger Hauer,/en/rutger_hauer
+586,Sean Young,/en/sean_young
+587,Edward James Olmos,/en/edward_james_olmos
+588,M. Emmet Walsh,/en/m_emmet_walsh
+589,Daryl Hannah,/en/daryl_hannah
+590,William Sanderson,/en/william_sanderson
+591,Brion James,/en/brion_james
+592,Joe Turkel,/en/joe_turkel
+593,Joanna Cassidy,/en/joanna_cassidy
+594,Jordan Cronenweth,
+595,Vangelis,
+596,Lawrence G. Paull,
+597,Jane Feinberg,
+598,Mike Fenton,
+599,Marci Liroff,
+600,Marsha Nakashima,
+601,David L. Snyder,
+602,Linda DeScenna,
+603,Leslie McCarthy-Frankenheimer,
+605,Michael Kaplan,
+606,Charles Knode,
+607,Zhang Yimou,
+608,Hayao Miyazaki,/en/hayao_miyazaki
+611,Cindy Davis,
+613,Sumi Shimamoto,/en/sumi_shimamoto
+614,Mahito Tsujimura,/en/mahito_tsujimura
+615,Hisako Kyoda,/en/hisako_kyoda
+616,Gorō Naya,/en/goro_naya
+617,Ichiro Nagai,/en/ichiro_nagai
+618,Kohei Miyauchi,/en/kohei_miyauchi
+619,Joji Yanami,/en/jouji_yanami
+620,Minoru Yada,/en/minoru_yada
+621,Rihoko Yoshida,/en/rihoko_yoshida
+622,Youji Matsuda,/en/y_ji_matsuda
+623,Mina Tominaga,/en/miina_tominaga
+624,Yoshiko Sakakibara,
+625,Iemasa Kayumi,/en/iemasa_kayumi
+626,Tetsuo Mizutori,/en/tetsuo_mizutori
+627,Rick Dempsey,
+628,Isao Takahata,/en/isao_takahata
+629,Hideshi Kyonen,
+630,Mark Henley,
+631,Ned Lott,
+632,Naoki Kaneko,
+633,Tomoko Kida,
+634,Shōji Sakai,
+635,Shigeharu Shiba,
+636,Joe Hisaishi,
+638,Michael Mann,
+639,Pieter Jan Brugge,
+640,Chris Kentis,
+642,Laura Lau,
+643,Gong Li,
+644,Blanchard Ryan,/en/blanchard_ryan
+646,Daniel Travis,/en/daniel_travis
+647,Dion Beebe,
+648,Philip Kaufman,
+649,Vernon Dobtcheff,/en/vernon_dobtcheff
+650,Karen Allen,/en/karen_allen
+651,Louise Lemoine Torrès,
+652,Paul Freeman,/en/paul_freeman
+653,Ronald Lacey,/en/ronald_lacey
+654,Rodolphe Pauly,
+655,John Rhys-Davies,/en/john_rhys-davies
+656,Denholm Elliott,/en/denholm_elliott
+657,Mariane Plasteig,
+658,Alfred Molina,/en/alfred_molina
+659,Wolf Kahler,
+660,Anthony Higgins,/en/anthony_higgins_1947
+661,Vic Tablian,
+662,Don Fellows,/en/don_fellows
+663,William Hootkins,/en/william_hootkins
+664,Frank Marshall,/en/frank_marshall_1946
+665,Howard G. Kazanjian,
+666,Douglas Slocombe,
+668,Mary Selway,
+669,Norman Reynolds,
+670,Ben Burtt,/en/ben_burtt
+671,Richard L. Anderson,
+672,Oskar Roehler,
+673,Bernd Eichinger,/en/bernd_eichinger
+674,Oliver Berben,
+675,Christian Ulmen,
+677,Moritz Bleibtreu,
+678,Martina Gedeck,
+679,Franka Potente,/en/franka_potente
+680,Corinna Harfouch,
+681,Nina Hoss,
+682,Uwe Ochsenknecht,/en/uwe_ochsenknecht
+683,Jasmin Tabatabai,
+684,Tom Schilling,
+685,Nina Kronjäger,
+686,Willard Huyck,
+687,Gloria Katz,
+688,Hermann Beyer,
+689,Kate Capshaw,/en/kate_capshaw
+690,Ke Huy Quan,/en/jonathan_ke_quan
+691,Amrish Puri,
+692,Jennifer Ulrich,
+693,Roshan Seth,/en/roshan_seth
+694,Philip Stone,/en/philip_stone
+695,Roy Chiao,
+696,David Yip,/en/david_yip
+697,Michael Gwisdek,
+699,Chua Kah Joo,
+700,Carl-Friedrich Koschnick,
+701,Rex Ngui,
+702,Philip Tan,
+703,Peter R. Adam,
+707,Dan Aykroyd,/en/dan_aykroyd
+708,Martin Todsharow,
+709,Ingrid Henn,
+710,An Dorthe Braker,
+711,Robert Watts,
+714,Ulrike Kriener,
+715,Elliot Scott,
+716,Emile Ardolino,/en/emile_ardolino
+717,Eleanor Bergstein,
+718,Linda Gottlieb,
+719,John Morris,
+720,Jeffrey Jur,
+721,Peter C. Frank,
+722,Jennifer Grey,/en/jennifer_grey
+723,Patrick Swayze,/en/patrick_swayze
+724,Cynthia Rhodes,/en/cynthia_rhodes
+725,Jerry Orbach,/en/jerry_orbach
+726,Jack Weston,/en/jack_weston
+727,Jane Brucker,/en/jane_brucker
+728,Kelly Bishop,/en/kelly_bishop
+729,Lonny Price,/en/lonny_price
+730,Max Cantor,
+733,Alvin Myerovich,
+734,Paula Trueman,/en/paula_trueman
+735,Arthur F. Repola,
+736,Menno Meyjes,
+737,Jeffrey Boam,/en/jeffrey_boam
+738,Sean Connery,/en/sean_connery
+739,Alison Doody,/en/alison_doody
+740,Julian Glover,/en/julian_glover
+741,River Phoenix,/en/river_phoenix
+742,Michael Byrne,/en/michael_byrne
+743,Kevork Malikyan,/en/kevork_malikyan
+744,Robert Eddison,
+745,Richard Young,/en/richard_young
+746,Alexei Sayle,/en/alexei_sayle
+747,Alex Hyde-White,/en/alex_hyde-white
+748,Paul Maxwell,
+749,Isla Blair,/en/isla_blair
+750,Maggie Cartier,
+751,Valorie Massalas,
+752,Judy Taylor,
+758,Bero Beyer,
+759,Antoine Héberlé,
+760,Sander Vos,
+762,Ali Suliman,
+764,Amer Hlehel,
+765,Hiam Abbass,
+766,Ashraf Barhom,
+767,Jina Sumedi,
+768,Pierre Hodgson,
+769,Martin Brest,
+770,Jerry Bruckheimer,/en/jerry_bruckheimer
+771,Don Simpson,
+772,Danilo Bach,
+774,Daniel Petrie Jr.,/en/daniel_petrie_jr
+776,Eddie Murphy,/en/eddie_murphy
+777,Judge Reinhold,/en/judge_reinhold
+778,John Ashton,/en/john_ashton
+779,Lisa Eilbacher,/en/lisa_eilbacher
+780,Ronny Cox,/en/ronny_cox
+781,Paul Reiser,/en/paul_reiser
+782,Steven Berkoff,/en/steven_berkoff
+783,Jonathan Banks,/en/jonathan_banks
+785,James Russo,/en/james_russo
+786,Stephen Elliott,/en/stephen_elliott_1918
+787,Gilbert R. Hill,
+788,Art Kimbro,
+789,Joel Bailey,
+790,Michael Champion,
+791,Mohamed Bustami,
+792,Bruce Surtees,
+793,Luis Buñuel,
+794,Angelo P. Graham,
+795,James J. Murakami,
+796,John M. Dwyer,
+797,Jeff Haley,
+798,Tom Bronson,
+799,Harold Faltermeyer,/en/harold_faltermeyer
+800,Arthur Coburn,
+801,Michael Glawogger,
+803,Wolfgang Thaler,
+804,Erich Lackner,
+805,Rolf Schmid,
+806,Shankar Loutakke,
+813,Pierre Unik,
+814,Tony Kaye,
+815,Ramón Acín,
+816,John Morrissey,
+817,Rafael Sánchez Ventura,
+818,David McKenna,/en/david_mckenna
+819,Edward Norton,/en/edward_norton
+820,Edward Furlong,/en/edward_furlong
+821,Beverly D'Angelo,/en/beverly_dangelo
+822,Avery Brooks,/en/avery_brooks
+823,Jennifer Lien,/en/jennifer_lien
+824,Ethan Suplee,/en/ethan_suplee
+825,Stacy Keach,/en/stacy_keach
+826,Fairuza Balk,/en/fairuza_balk
+827,Elliott Gould,/en/elliott_gould
+828,Guy Torry,/en/guy_torry
+829,William Russ,
+830,Joe Cortese,
+831,Jason Bose Smith,
+832,Antonio David Lyons,
+833,Alex Sol,
+834,Otto Preminger,/en/otto_preminger
+836,André F. Nebe,
+841,Raoul B. Reinert,
+843,Katrin Lehnert,
+844,Wendell Mayes,
+845,Sven O. Hill,
+846,John D. Voelker,
+847,Ursula Buschhorn,
+848,Hans-Werner Meyer,
+849,Eli Lotar,
+850,Diana Karsten,
+851,Anne Dudley,
+852,Gerald B. Greenberg,
+853,Alan Heim,
+854,James Stewart,/en/james_stewart
+855,Lee Remick,/en/lee_remick
+856,Ben Gazzara,/en/ben_gazzara
+857,Arthur O'Connell,/en/arthur_oconnell
+858,Duke Ellington,/en/duke_ellington
+859,Valerie McCaffrey,
+860,Eve Arden,/en/eve_arden
+861,Kathryn Grant,/en/kathryn_crosby
+862,George C. Scott,/en/george_c_scott
+863,Orson Bean,/en/orson_bean
+865,Michael Bay,/en/michael_bay
+866,Russ Brown,/en/russ_brown
+867,Marc Meyer,
+868,Faysal Omer,
+869,Gale Anne Hurd,
+870,Sam Leavitt,
+871,Louis R. Loeffler,
+873,Robert Roy Pool,
+874,Boris Leven,
+875,Peter Polsak-Lohmann,
+876,Jonathan Hensleigh,
+877,Richard Carruth,
+878,Jack Solomon,
+879,Billy Bob Thornton,/en/billy_bob_thornton
+880,Ben Affleck,/en/ben_affleck
+881,Irving Rosenberg,
+882,Liv Tyler,/en/liv_tyler
+883,Will Patton,/en/will_patton
+884,Steve Buscemi,
+885,James Almond,
+886,William Fichtner,/en/william_fichtner
+887,Owen Wilson,/en/owen_wilson
+891,Moritz Hoffmeister,
+892,John Schwartzman,
+893,Tony Scott,/en/tony_scott
+894,Trevor Rabin,
+896,Michael White,
+897,Bonnie Timmermann,/en/bonnie_timmermann
+898,Mark Goldblatt,/en/mark_goldblatt
+899,Glen Scantlebury,
+900,Christopher Boyes,
+901,Rita Lengyel,
+902,Milton Welsh,
+903,Lawrence A. Hubbs,
+904,Jeffrey L. Kimball,
+905,Bruton Jones,
+906,Rick Simpson,
+907,Magali Guidasci,
+908,Michael Tronick,
+909,Billy Weber,
+910,Steve Grumette,
+911,Robert D. Wachs,
+912,Larry Ferguson,
+913,Warren Skaaren,
+914,Anna Haas,
+915,David Giler,
+916,Dennis Klein,/en/dennis_klein
+917,Jesko Klatt,
+919,Jan Raiber,
+920,Jürgen Prochnow,/en/jurgen_prochnow
+921,Brigitte Nielsen,/en/brigitte_nielsen
+922,Allen Garfield,/en/allen_garfield
+923,Dean Stockwell,/en/dean_stockwell
+925,Paul Guilfoyle,/en/paul_guilfoyle
+926,Ola Ray,/en/ola_ray
+928,Rebecca Ferratti,
+929,David Franzoni,/en/david_franzoni
+930,Branko Lustig,/en/branko_lustig
+931,Douglas Wick,
+932,John Logan,
+933,William Nicholson,/en/william_nicholson_1948
+934,Russell Crowe,/en/russell_crowe
+935,Connie Nielsen,/en/connie_nielsen
+936,Oliver Reed,/en/oliver_reed
+937,Derek Jacobi,/en/derek_jacobi
+938,Djimon Hounsou,/en/djimon_hounsou
+939,David Schofield,/en/david_schofield
+940,John Shrapnel,/en/john_shrapnel
+941,Tomas Arana,
+942,Ralf Moeller,/en/ralf_moeller
+943,John Mathieson,
+944,Arthur Max,
+945,Crispian Sallis,
+946,Janty Yates,
+947,Hans Zimmer,
+948,Lisa Gerrard,
+949,Louis DiGiaimo,
+950,Pietro Scalia,
+951,Colin Coull,
+952,Agustín Almodóvar,
+953,Cecilia Roth,/en/cecilia_roth
+954,Marisa Paredes,
+955,Penélope Cruz,/en/penelope_cruz
+956,Guy Ritchie,/en/guy_ritchie
+957,Matthew Vaughn,
+958,Candela Peña,
+959,David A. Hughes,
+960,John Murphy,
+961,Antonia San Juan,
+962,Rosa María Sardà,
+963,Toni Cantó,
+964,Eloy Azorín,/en/eloy_azorin
+965,Fernando Fernán Gómez,/en/fernando_fernan_gomez
+966,Tim Maurice-Jones,
+967,Iain Andrews,
+968,Eve Mavrakis,
+970,Celestia Fox,
+971,Niven Howie,
+973,Jason Flemyng,/en/jason_flemyng
+974,Dexter Fletcher,/en/dexter_fletcher
+975,Nick Moran,/en/nick_moran
+976,Jason Statham,/en/jason_statham
+978,Steven Mackintosh,/en/steven_mackintosh
+979,Miguel Rejas,
+980,Vinnie Jones,
+981,José Antonio Bermúdez,
+982,Sting,/en/sting
+983,Diego Garrido,
+984,Nicholas Rowe,/en/nicholas_rowe_1966
+985,Nick Marcq,
+986,Charles Forbes,
+987,Lenny McLean,
+988,Peter McNicholl,
+989,P.H. Moriarty,/en/p_h_moriarty
+990,Frank Harper,/en/frank_harper
+991,Steve Sweeney,
+992,Huggy Leaver,
+993,Tony McMahon,
+994,Stephen Marcus,/en/stephen_marcus
+995,Vas Blackwood,/en/vas_blackwood
+996,Éric Serra,
+997,Thierry Arbogast,
+998,Sylvie Landra,
+999,Todd M. Thaler,
+1000,Dan Weil,
