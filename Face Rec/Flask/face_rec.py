@@ -3,31 +3,42 @@ import cv2
 import numpy as np
 import pandas as pd
 from deepface import DeepFace
+from multiprocessing import Pool
 
 def process_video(video_path, db_path, output_dir):
     os.makedirs(output_dir, exist_ok=True)
-
     cap = cv2.VideoCapture(video_path)
     fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_interval = int(fps)
+    frame_interval = int(fps * 5)  # Process every 5 seconds
+    frames = []
     frame_index = 0
     current_frame = 0
-    all_actors = set()
 
     while True:
         ret, frame = cap.read()
         if not ret:
             break
-
         if current_frame % frame_interval == 0:
-            actors_in_frame = process_frame(frame, frame_index, db_path, output_dir)
-            all_actors.update(actors_in_frame)
+            frames.append((frame, frame_index, db_path, output_dir))
             frame_index += 1
-
         current_frame += 1
-
     cap.release()
-    return frame_index, list(all_actors)  # total processed frames, unique actor names
+
+    with Pool(processes=4) as pool:
+        results = pool.map(process_frame_wrapper, frames)
+
+    all_actors = set()
+    for actors_in_frame in results:
+        all_actors.update(actors_in_frame)
+    return frame_index, list(all_actors)
+
+def process_frame_wrapper(args):
+    return process_frame(*args)
+
+# Prepare arguments for each frame
+frame_args = [(frame, idx, db_path, output_dir) for idx, frame in enumerate(frames_to_process)]
+with Pool(processes=4) as pool:  # Adjust number of processes to your CPU
+    results = pool.map(process_frame_wrapper, frame_args)
 
 def process_frame(frame, frame_index, db_path, output_dir):
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -81,3 +92,6 @@ def process_frame(frame, frame_index, db_path, output_dir):
 
     # Return list of actor names found in this frame
     return list(identity_map.values())
+
+    height, width, _ = frame.shape
+    small_frame = cv2.resize(frame, (width // 2, height // 2))
