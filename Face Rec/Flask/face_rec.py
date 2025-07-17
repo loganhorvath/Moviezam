@@ -12,6 +12,7 @@ def process_video(video_path, db_path, output_dir):
     frame_interval = int(fps)
     frame_index = 0
     current_frame = 0
+    all_actors = set()
 
     while True:
         ret, frame = cap.read()
@@ -19,13 +20,14 @@ def process_video(video_path, db_path, output_dir):
             break
 
         if current_frame % frame_interval == 0:
-            process_frame(frame, frame_index, db_path, output_dir)
+            actors_in_frame = process_frame(frame, frame_index, db_path, output_dir)
+            all_actors.update(actors_in_frame)
             frame_index += 1
 
         current_frame += 1
 
     cap.release()
-    return frame_index  # total processed frames
+    return frame_index, list(all_actors)  # total processed frames, unique actor names
 
 def process_frame(frame, frame_index, db_path, output_dir):
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -65,10 +67,10 @@ def process_frame(frame, frame_index, db_path, output_dir):
         if person_name not in identity_map:
             identity_map[identity_path] = person_name
 
+    # Draw boxes and names
     for (box, _) in zip(face_bounding_boxes, detected_faces):
         x, y, w, h = box["x"], box["y"], box["w"], box["h"]
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
         matched_identity = next(iter(identity_map.values()), None)
         if matched_identity:
             cv2.putText(frame, matched_identity, (x, y - 10),
@@ -76,3 +78,6 @@ def process_frame(frame, frame_index, db_path, output_dir):
 
     output_path = os.path.join(output_dir, f"frame_{frame_index}.jpg")
     cv2.imwrite(output_path, frame)
+
+    # Return list of actor names found in this frame
+    return list(identity_map.values())

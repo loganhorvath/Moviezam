@@ -1,13 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Upload Video</title>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActorLink | Find Movie Connections</title>
+    <meta name="description" content="Discover which movies actors have appeared in together">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: "#6366f1",
+                            DEFAULT: "#4f46e5",
+                            dark: "#4338ca"
+                        },
+                        dark: "#0f172a"
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.3s ease-in-out',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
-<body>
-    <h2>Upload a Video File</h2>
-    <form method="post" enctype="multipart/form-data">
-        <input type="file" name="video" accept="video/*">
-        <input type="submit" value="Upload and Process">
-    </form>
+<body class="min-h-screen bg-gradient-to-br from-dark to-gray-900 text-gray-100">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Hero Section -->
+        <header class="text-center mb-16 animate-fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                <span class="gradient-text">ActorLink</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Upload a clip or paste a link to discover which movies the actors have appeared in together
+            </p>
+        </header>
+
+        <!-- Input Card -->
+        <div class="glass-card rounded-2xl p-8 mb-16 transition-all duration-300 hover:shadow-xl animate-fade-in">
+            <div class="flex flex-col items-center">
+                <!-- URL Input -->
+                <div class="w-full max-w-md mb-8">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-link text-gray-400"></i>
+                        </div>
+                        <input 
+                            type="text" 
+                            id="videoUrl" 
+                            class="w-full pl-10 pr-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" 
+                            placeholder="Paste TikTok/Instagram URL"
+                            autocomplete="off"
+                        >
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                            <button class="text-gray-400 hover:text-primary transition">
+                                <i class="fas fa-paste"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="relative my-6 w-full max-w-xs">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-700"></div>
+                    </div>
+                    <div class="relative flex justify-center">
+                        <span class="px-2 bg-gray-800 text-sm text-gray-400">or</span>
+                    </div>
+                </div>
+
+                <!-- Upload Area -->
+                <div 
+                    id="dropZone"
+                    class="w-full max-w-md border-2 border-dashed border-gray-700 rounded-xl p-8 text-center cursor-pointer transition-all duration-300 hover:border-primary hover:bg-gray-800/50 mb-6"
+                >
+                    <div class="flex flex-col items-center justify-center space-y-3">
+                        <div class="p-4 bg-gray-800 rounded-full animate-float">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-medium">Drag & drop video file</h3>
+                        <p class="text-sm text-gray-400">MP4, MOV, or AVI (max 50MB)</p>
+                        <button class="mt-3 px-6 py-2 bg-primary hover:bg-primary-dark text-white rounded-lg transition">
+                            Browse Files
+                        </button>
+                    </div>
+                    <input type="file" id="fileInput" class="hidden" accept="video/*">
+                </div>
+
+                <button 
+                    id="analyzeBtn"
+                    class="px-8 py-3 bg-gradient-to-r from-primary to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition flex items-center space-x-2"
+                >
+                    <i class="fas fa-sparkles"></i>
+                    <span>Analyze Video</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Section (Initially Hidden) -->
+        <div id="results" class="hidden animate-fade-in">
+            <!-- Actor Cards -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="gradient-text">Identified Actors</span>
+                    <span class="ml-2 text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">2 detected</span>
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <!-- Actor cards will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <!-- Movie Connections -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6 gradient-text">Movies Together</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Movie cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const resultsSection = document.getElementById('results');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-primary', 'bg-gray-800/50');
+        });
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('border-primary', 'bg-gray-800/50');
+        });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-primary', 'bg-gray-800/50');
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                updateDropZonePreview();
+            }
+        });
+
+        fileInput.addEventListener('change', updateDropZonePreview);
+        analyzeBtn.addEventListener('click', analyzeVideo);
+
+        function updateDropZonePreview() {
+            if (fileInput.files.length) {
+                const file = fileInput.files[0];
+                dropZone.innerHTML = `
+                    <div class="flex flex-col items-center space-y-3">
+                        <i class="fas fa-check-circle text-3xl text-green-500"></i>
+                        <h3 class="text-lg font-medium">${file.name}</h3>
+                        <p class="text-sm text-gray-400">${(file.size / (1024 * 1024)).toFixed(2)} MB</p>
+                    </div>
+                `;
+            }
+        }
+
+        async function analyzeVideo() {
+            analyzeBtn.innerHTML = `<i class="fas fa-spinner animate-spin"></i><span>Processing...</span>`;
+            analyzeBtn.disabled = true;
+
+            let formData = new FormData();
+            if (fileInput.files.length) {
+                formData.append('video', fileInput.files[0]);
+            } else {
+                const url = document.getElementById('videoUrl').value;
+                if (url) formData.append('videoUrl', url);
+            }
+
+            const response = await fetch('/analyze', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+
+            analyzeBtn.innerHTML = `<i class="fas fa-sparkles"></i><span>Analyze Video</span>`;
+            analyzeBtn.disabled = false;
+
+            // Use backend data
+            renderActors(data.actors);
+            renderMovies(data.movies);
+
+            // Update detected count
+            document.querySelector('#results h2 span.ml-2').textContent = `${data.actors.length} detected`;
+
+            resultsSection.classList.remove('hidden');
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function renderActors(actors) {
+            const container = document.querySelector('#results .grid:first-child');
+            container.innerHTML = actors.map(actor => `
+                <div class="bg-gray-800 rounded-xl p-4 text-center transition hover:scale-[1.02]">
+                    <div class="relative mx-auto w-24 h-24 mb-3">
+                        <img src="${actor.image || 'https://picsum.photos/200?random=' + Math.floor(Math.random()*1000)}" alt="${actor.name}" class="w-full h-full rounded-full object-cover border-2 border-primary/50">
+                        <div class="absolute -bottom-1 -right-1 bg-primary text-xs font-bold px-2 py-1 rounded-full">
+                            ${actor.confidence || ''}
+                        </div>
+                    </div>
+                    <h3 class="font-bold">${actor.name}</h3>
+                    <p class="text-sm text-gray-400 mt-1">${actor.knownFor || ''}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderMovies(movies) {
+            const container = document.querySelector('#results .grid:last-child');
+            container.innerHTML = movies.map(movie => `
+                <div class="bg-gray-800 rounded-xl overflow-hidden transition hover:scale-[1.02] group">
+                    <div class="relative">
+                        <img src="${movie.poster || 'https://picsum.photos/300/450?random=' + Math.floor(Math.random()*1000)}" alt="${movie.title}" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                            <div>
+                                <div class="flex items-center text-yellow-400 mb-1">
+                                    <i class="fas fa-star mr-1"></i>
+                                    <span>${movie.rating || ''}/10</span>
+                                </div>
+                                <p class="text-sm">Starring: ${movie.actors ? movie.actors.join(', ') : ''}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold">${movie.title} ${movie.year ? '(' + movie.year + ')' : ''}</h3>
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
 </body>
 </html>
