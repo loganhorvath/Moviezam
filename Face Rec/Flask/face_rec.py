@@ -102,3 +102,26 @@ def process_frame(frame, frame_index, db_path, output_dir):
 
     # Return unique actor names found in this frame
     return list(set(identity_map.values()))
+
+recognized_actors = []  # This should be defined based on your context
+movie_lists = []
+actors_data = []
+
+for actor in recognized_actors:
+    actor_name = actor.replace("_", " ")
+    person_id = get_person_id_tmdb(actor_name)
+    # Try to get the first image in the actor's DB folder
+    actor_folder = os.path.join(DB_PATH, actor)
+    image_path = None
+    if os.path.isdir(actor_folder):
+        images = [f for f in os.listdir(actor_folder) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+        if images:
+            image_path = f"/static/actors_DB/{actor}/{images[0]}"
+    if person_id:
+        movies = get_actor_movies_tmdb(person_id)
+        movie_lists.append(movies)
+        actors_data.append({'name': actor_name, 'image': image_path})
+    else:
+        actors_data.append({'name': actor})  # No replace, no TMDb lookup
+
+print("Recognized actors (folder names):", recognized_actors)
